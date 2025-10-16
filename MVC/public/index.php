@@ -22,8 +22,16 @@ $route = $_GET['r'] ?? 'inicio';
 try {
     switch ($route) {
         case '':
-        case 'inicio':        (new HomeController())->index(); break;
+        case 'inicio':        (
+            new HomeController())->index(); break;
+        case 'lunes':         
+            (new LunesController())->index(); break;
+        case 'martes':
+            (new MartesController())->index() ; break;    
+         case 'Miercoles':
+            (new MiercolesController())->index() ; break;
 
+        default:
             header('Location: ?r=inicio'); exit;
     }
 } catch (Throwable $e) {
