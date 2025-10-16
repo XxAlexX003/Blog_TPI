@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+
+// Rutas base
+$ROOT = dirname(__DIR__); // .../PRÁCTICA-PREBLOG
+$PATHS = [
+    $ROOT . '/app/controllers',
+    $ROOT . '/app/models',
+    $ROOT . '/lib',
+];
+
+// Autocarga
+spl_autoload_register(function ($class) use ($PATHS) {
+    foreach ($PATHS as $dir) {
+        $file = $dir . '/' . $class . '.php';
+        if (is_file($file)) { require_once $file; return; }
+    }
+});
+
+// Router igual que antes (solo pega aquí tu switch tal cual)
+$route = $_GET['r'] ?? 'inicio';
+try {
+    switch ($route) {
+        case '':
+        case 'inicio':        (new HomeController())->index(); break;
+
+            header('Location: ?r=inicio'); exit;
+    }
+} catch (Throwable $e) {
+    http_response_code(500);
+    echo "<h1>Error interno</h1><pre>" . htmlspecialchars($e->getMessage()) . "</pre>";
+}
