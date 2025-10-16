@@ -17,7 +17,6 @@ spl_autoload_register(function ($class) use ($PATHS) {
     }
 });
 
-// Router igual que antes (solo pega aquí tu switch tal cual)
 $route = $_GET['r'] ?? 'inicio';
 try {
     switch ($route) {
@@ -28,9 +27,17 @@ try {
             (new LunesController())->index(); break;
         case 'martes':
             (new MartesController())->index() ; break;    
-         case 'Miercoles':
+         case 'miercoles':
             (new MiercolesController())->index() ; break;
+        case 'jueves':
+            (new JuevesController())->index(); break;
+        case 'miInfo':
+            (new miInfoController())->index(); break;
 
+        case 'visita':
+            $c = new ViewversController();
+            ($_SERVER['REQUEST_METHOD']==='POST') ? $c->store() : $c->create();
+            break;
         default:
             header('Location: ?r=inicio'); exit;
     }

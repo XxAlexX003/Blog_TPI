@@ -10,9 +10,12 @@
 
         <h1>Inicio</h1>
         <nav>
-            <a href="?r=lunes">Lunes</a> 
-            <a href="?r=mi-informacion">Mi información</a>
-
+            <a href="?r=lunes">Lunes</a> |
+            <a href="?r=martes">Martes</a> |
+            <a href="?r=miercoles">Miércoles</a> 
+            <a href="?r=jueves">Jueves</a>
+            <a href="?r=miInfo">Mi información</a> |
+            <a href="?r=visita">Visitas</a>
         </nav>
 
 
