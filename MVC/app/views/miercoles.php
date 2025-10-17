@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Blog SDS25</title>
+  <title>Miercoles | Semana de Sistemas 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +13,7 @@
       <h1 class="site-title">Semana de Sistemas 2025</h1>
       <p class="site-subtitle">Blog sobre SDS25 | Miercoles</p>
     </div>
-  </header>
+    </header>
 
 <nav class="site-nav">
   <div class="container nav-inner">
@@ -47,7 +47,7 @@
     </section>
     <br>
       <section class="hero">
-        <div class="carousel" aria-label="Galería de fotos">
+        <div class="carousel" aria-label="Fotos de cancelacionEvento">
           <div class="carousel-track">
             
             <div class="slide current"><img src="images/furbo.jpg" alt="Foto 1"></div>
@@ -58,7 +58,7 @@
           <button class="control prev" aria-label="Anterior">❮</button>
           <button class="control next" aria-label="Siguiente">❯</button>
 
-          <div class="indicators" role="tablist" aria-label="Diapositivas">
+          <div class="indicators" role="tablist" aria-label="Galeria">
             <button class="dot current" aria-label="Ir a la 1" aria-selected="true"></button>
             <button class="dot" aria-label="Ir a la 2"></button>
 
@@ -70,7 +70,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© 2025 Semana de Sistemas, derechos reservados</small>
+      <small>© 2025 Semana de Sistemas | Miercoles</small>
     </div>
   </footer>
 

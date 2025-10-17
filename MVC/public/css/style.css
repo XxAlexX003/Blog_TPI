@@ -2,21 +2,21 @@
 html, body { height: 100%; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #111827; 
-  background: #b2c6db; 
+  background: #090505; 
 }
 
 :root{
   --blue-600:#2563eb;
   --blue-700:#203442;
   --violet-600:#6e1bff;
-  --moraditoboton-600:#5a07ff;
+  --moraditoboton-600:#3e2178;
   --emerald-700:#047857;
   --slate-900:#0f172a;
   --slate-700:#334155;
-  --slate-100:#17004e;
-  --white:#fbfbfb;
+  --slate-100:#ab95ec;
+  --white:#8cff57;
 }
 
 .container{ width:min(1100px, 92%); margin-inline:auto; }
@@ -26,6 +26,7 @@ body {
   color: var(--white);
   padding: 32px 0 22px;
     text-align: center;
+    border: none;
 
 }
 .site-title{
@@ -39,8 +40,8 @@ body {
 
 .site-nav{
   background: var(--white);
-  border-bottom: 1px solid #e5e7eb;
   position: sticky; top: 0; z-index: 50;
+
 }
 .nav-inner{ display:flex; align-items:center; gap:16px; padding: 10px 0; }
 .nav-logo{
@@ -104,7 +105,7 @@ body {
   bottom:12px; display:flex; gap:8px;
 }
 .dot{
-  width:10px; height:10px; border-radius:999px; border:2px solid #fff;
+  width:10px; height:10px; border-radius:999px; 
   background: transparent; cursor:pointer; opacity:.7;
 }
 .dot.current{ background:#fff; opacity:1; }
@@ -115,9 +116,12 @@ body {
   gap: 16px; 
   grid-template-columns: 1fr; 
   margin-top: 18px;
+
+
 }
 
 .card--xl{
+  border: 5px solid #cb81ff;
   padding: 24px 28px;
   border-radius: 18px;
   box-shadow: 0 16px 36px rgba(10,10,40,.10);
@@ -130,7 +134,7 @@ body {
   margin-bottom: 10px;
 }
 .card{
-  background: var(--white); border:1px solid #e5e7eb; border-radius:16px;
+  background: var(--white); border-radius:16px;
   padding:16px; box-shadow: 0 6px 14px rgba(10,10,40,.05);
 }
 .card h3{ margin:6px 0 8px; }
