@@ -9,14 +9,14 @@
   <h1>Registrar visita</h1>
 
   <?php if (!empty($success)): ?>
-    <p style="color:green;">✅ <?= htmlspecialchars($success) ?></p>
+    <p style="color:green;"><?= htmlspecialchars($success) ?></p>
   <?php endif; ?>
 
   <?php if (!empty($error)): ?>
-    <p style="color:red;">❌ <?= htmlspecialchars($error) ?></p>
+    <p style="color:red;"><?= htmlspecialchars($error) ?></p>
   <?php endif; ?>
 
-  <form method="post" action="?r=visitas" autocomplete="off">
+  <form method="post" action="?r=visita" autocomplete="off">
     <div>
       <label>Nombre*:
         <input type="text" name="nombre" required>

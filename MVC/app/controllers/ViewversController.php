@@ -6,8 +6,7 @@ final class ViewversController {
         $success = $_GET['success'] ?? null;
         $error   = $_GET['error']   ?? null;
 
-        // Ajuste de ruta: desde app/controllers a app/views
-        require __DIR__ . '/../views/Visita.php';
+        require __DIR__ . '/../views/visita.php';
     }
 
     public function store(): void {

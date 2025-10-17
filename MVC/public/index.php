@@ -1,15 +1,13 @@
 <?php
 declare(strict_types=1);
 
-// Rutas base
-$ROOT = dirname(__DIR__); // .../PRÁCTICA-PREBLOG
+$ROOT = dirname(__DIR__);
 $PATHS = [
     $ROOT . '/app/controllers',
     $ROOT . '/app/models',
     $ROOT . '/lib',
 ];
 
-// Autocarga
 spl_autoload_register(function ($class) use ($PATHS) {
     foreach ($PATHS as $dir) {
         $file = $dir . '/' . $class . '.php';
