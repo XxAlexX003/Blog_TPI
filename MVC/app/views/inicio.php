@@ -15,21 +15,22 @@
     </div>
   </header>
 
-  <nav class="site-nav">
-    <div class="container nav-inner">
-      <a href="?r=inicio" class="nav-logo">Inicio</a>
-      <ul class="nav-links">
-        <li><a href="?r=lunes">Lunes</a></li>
-        <li><a href="?r=martes">Martes</a></li>
-        <li><a href="?r=miercoles">Miércoles</a></li>
-        <li><a href="?r=jueves">Jueves</a></li>
-        <li><a href="?r=viernes">Viernes</a></li>
-        <li><a href="?r=miInfo">Mi información</a></li>
-        <li><a href="?r=visita" class="btn-cta">Visitas</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-    </div>
-  </nav>
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="inicio" class="nav-logo">Inicio</a>
+    <ul class="nav-links">
+      <li><a href="lunes">Lunes</a></li>
+      <li><a href="martes">Martes</a></li>
+      <li><a href="miercoles">Miércoles</a></li>
+      <li><a href="jueves">Jueves</a></li>
+      <li><a href="viernes">Viernes</a></li>
+      <li><a href="miinfo">Mi información</a></li>
+      <li><a href="visita" class="btn-cta">Visitas</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+  </div>
+</nav>
+
 
   <main class="site-main">
     <div class="container">
@@ -64,7 +65,6 @@
                 </p>
             </article>
             </section>
-
 
     </div>
   </main>

@@ -11,33 +11,52 @@ $PATHS = [
 spl_autoload_register(function ($class) use ($PATHS) {
     foreach ($PATHS as $dir) {
         $file = $dir . '/' . $class . '.php';
-        if (is_file($file)) { require_once $file; return; }
+        if (is_file($file)) {
+            require_once $file;
+            return;
+        }
     }
 });
 
-$route = $_GET['r'] ?? 'inicio';
+$requestUri = $_SERVER['REQUEST_URI'] ?? '/';
+$scriptDir  = dirname($_SERVER['SCRIPT_NAME']);
+$route = str_replace($scriptDir, '', $requestUri);
+$route = explode('?', $route)[0];
+$route = strtolower(trim($route, '/'));
+
+if ($route === '' || $route === false) {
+    $route = 'inicio';
+}
+
 try {
     switch ($route) {
-        case '':
-        case 'inicio':        (
-            new HomeController())->index(); break;
-        case 'lunes':         
-            (new LunesController())->index(); break;
+        case 'inicio':
+            (new HomeController())->index();
+            break;
+        case 'lunes':
+            (new LunesController())->index();
+            break;
         case 'martes':
-            (new MartesController())->index() ; break;    
-         case 'miercoles':
-            (new MiercolesController())->index() ; break;
+            (new MartesController())->index();
+            break;
+        case 'miercoles':
+            (new MiercolesController())->index();
+            break;
         case 'jueves':
-            (new JuevesController())->index(); break;
-        case 'miInfo':
-            (new miInfoController())->index(); break;
-
+            (new JuevesController())->index();
+            break;
+        case 'miinfo':
+            (new miInfoController())->index();
+            break;
         case 'visita':
-            $c = new ViewversController();
-            ($_SERVER['REQUEST_METHOD']==='POST') ? $c->store() : $c->create();
+            $ctrl = new ViewversController();
+            ($_SERVER['REQUEST_METHOD'] === 'POST')
+                ? $ctrl->store()
+                : $ctrl->create();
             break;
         default:
-            header('Location: ?r=inicio'); exit;
+            header('Location: inicio');
+            exit;
     }
 } catch (Throwable $e) {
     http_response_code(500);
