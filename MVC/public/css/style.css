@@ -11,11 +11,11 @@ body {
   --blue-600:#2563eb;
   --blue-700:#203442;
   --violet-600:#6e1bff;
-  --emerald-600:#059669;
+  --moraditoboton-600:#5a07ff;
   --emerald-700:#047857;
   --slate-900:#0f172a;
   --slate-700:#334155;
-  --slate-100:#f1f5f9;
+  --slate-100:#17004e;
   --white:#fbfbfb;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 .nav-links a:hover{ background: var(--slate-100); color: var(--slate-900); }
 .btn-cta{
-  background: var(--emerald-600); color: var(--white) !important;
+  background: var(--moraditoboton-600); color: var(--white) !important;
 }
 .btn-cta:hover{ background: var(--emerald-700); }
 
