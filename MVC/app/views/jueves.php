@@ -31,120 +31,129 @@
     </div>
   </nav>
 
+
+
   <main class="site-main">
     <div class="container">
 
-      <section class="cards cards--single">
-        <article class="card card--xl">
-          <h3>Primer acto <br>
-            <h4>Preparativos</h4>
-          </h3>
-          <p>
+        <section class="perfil-split">
+          <div class="split-card">
+          <figure class="split-photo">
+            <img src="images/preparativo2.jpg" alt="Foto vertical">
+          </figure>
+
+          <div class="split-content">
+          <h2 class="split-title" style="text-align:center;">Primer acto <br> Preparativos</h2>
+            <p class="split-desc">
+
             Antes de dar comienzo al dia de hoy pues poner los preparativos pre-feria de logros, en mi caso estuve ayudando a colocar los banderines que estaban colgados en unos stands y los generales
-
-            </p>
-
-      </section>
-
-      <br>
-      <section class="hero">
-        <div class="carousel" aria-label="EtapaUno">
-          <div class="carousel-track">
-            <div class="slide current"><img src="images/preparativo1.jpg" alt="Foto1  jueves"></div>
-            <div class="slide"><img src="images/preparativo2.jpg" alt="Foto2  jueves"></div>
-            <div class="slide"><img src="images/preparativo3.jpg" alt="Foto3  jueves"></div>
             
-          </div>
-
-          <button class="control prev" aria-label="Anterior">❮</button>
-          <button class="control next" aria-label="Siguiente">❯</button>
-
-          <div class="indicators">
-            <button class="dot current" aria-label="Ir a la 1"></button>
-            <button class="dot" aria-label="Ir a la 2"></button>
-            <button class="dot" aria-label="Ir a la 3"></button>
+          </p>
           </div>
         </div>
       </section>
 
-      <br>
+      <section class="photo-triple">
+            <h2 class="gallery-title" style="text-align:center;">Fotos de la preparacion</h2>
 
-            <section class="cards cards--single">
-        <article class="card card--xl">
-          <h3>Segundo acto <br>
-            <h4>Feria de logros</h4>
-          </h3>
-          <p>
+        <div class="triple-grid">
+            <figure class="shot">
+            <img src="images/preparativo1.jpg" alt="Foto 1">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/preparativo3.jpg" alt="Foto 2">
+            </figure>
+            <figure class="shot">
+            <img src="images/preparativo4.jpg" alt="Foto 2">
+            </figure>
+
+        </div>
+        </section>
+
+        <section class="perfil-split">
+        <div class="split-card">
+          <figure class="split-photo">
+            <img src="images/feria2.jpg" alt="Foto vertical">
+          </figure>
+
+          <div class="split-content">
+          <h2 class="split-title" style="text-align:center;">Segundo acto <br> Feria de logros</h2>
+            <p class="split-desc">
+
             Una vez llegada la hora se dio comienzo a la feria de logros en donde se presentaron diversos proyectos de los diferentes años de la carrera. Entre los proyectos que llegué a ver estaban los siguientes (No tienen un orden en especifico)
             <br> <br>
             -El radar de Moises Urbina, uno de los ganadores (Merecido) <br>
             -Coleccionable, un proyecto el cual simulaba un tipo de pokemon go, yendo por la universidad buscando los distintos coleccionales que habia en la zona  <br>
             -El bingo, no pude llegar a probarlo pero estuve viendo como jugaban los demás compañero y sin más, muy bonito en lo que respecta a la parte visual <br>
             -Y sin olvidarnos de la nueva generacion las paginas webs hechas por los estudiantes de primer año de la materia Teoria General de Sistemas
-        </p>
-
-      </section>
-
-      <br>
-      <section class="hero">
-        <div class="carousel" aria-label="EtapaDos">
-          <div class="carousel-track">
-            <div class="slide current"><img src="images/feria2.jpg" alt="Foto5  jueves"></div>
-            <div class="slide"><img src="images/feria5.jpg" alt="Foto7  jueves"></div>
-            <div class="slide"><img src="images/feria3.jpg" alt="Foto8  jueves"></div>
-            <div class="slide"><img src="images/feria4.jpg" alt="Foto9  jueves"></div>
-          </div>
-
-          <button class="control prev" aria-label="Anterior">❮</button>
-          <button class="control next" aria-label="Siguiente">❯</button>
-
-          <div class="indicators">
-            <button class="dot current" aria-label="Ir a la 1"></button>
-            <button class="dot" aria-label="Ir a la 2"></button>
-            <button class="dot" aria-label="Ir a la 3"></button>
-            <button class="dot" aria-label="Ir a la 4"></button>
+            
+          </p>
           </div>
         </div>
       </section>
 
-    <section class="cards cards--single">
-        <article class="card card--xl">
-          <h3>Pre-pupuseada <br>
-            <h4>Entretiempo</h4>
-          </h3>
+      <section class="photo-triple">
+            <h2 class="gallery-title" style="text-align:center;">Fotos de algunos proyectos</h2>
 
-          <p>
+        <div class="triple-grid">
+            <figure class="shot">
+            <img src="images/feria3.jpg" alt="Foto 1">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/feria4.jpg" alt="Foto 2">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/feria5.jpg" alt="Foto 3">
+            </figure>
+        </div>
+        </section>
+
+        <section class="perfil-split">
+          <div class="split-card">
+          <figure class="split-photo">
+            <img src="images/entre1.jpg" alt="Foto vertical">
+          </figure>
+
+          <div class="split-content">
+          <h2 class="split-title" style="text-align:center;">Pre-pupuseada <br> Entre-tiempo</h2>
+            <p class="split-desc">
                 Despues de la feria de logros, hubo un tiempo muerto, en el cual nos apoderamos de el musicon que tenia el Ing Franco, fueron 10 minutos, pero qué 10 minutos, los disfrutamos
           </p>
-
-      </section>
-
-      <br>
-      <section class="hero">
-        <div class="carousel" aria-label="EtapaTres">
-          <div class="carousel-track">
-            <div class="slide current"><img src="images/entre1.jpg" alt="Entretiempo1  jueves"></div>
-            <div class="slide"><img src="images/entre2.jpg" alt="Entretiempo2  jueves"></div>
-            
-          </div>
-
-          <button class="control prev" aria-label="Anterior">❮</button>
-          <button class="control next" aria-label="Siguiente">❯</button>
-
-          <div class="indicators">
-            <button class="dot current" aria-label="Ir a la 1"></button>
-            <button class="dot" aria-label="Ir a la 2"></button>
           </div>
         </div>
       </section>
 
-          <section class="cards cards--single">
-        <article class="card card--xl">
-          <h3>Tercer acto <br>
-            <h4>Pupuseada</h4>
-          </h3>
+        <section class="photo-triple">
+            <h2 class="gallery-title" style="text-align:center;">Fotos del entretiempo</h2>
 
-            <p>
+            <div class="triple-grid">
+            <figure class="shot">
+            <img src="images/entre2.jpg" alt="Foto 1">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/entre3.jpg" alt="Foto 2">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/entre4.jpg" alt="Foto 3">
+            </figure>
+        </div>
+        </section>
+
+
+      <section class="perfil-split">
+          <div class="split-card">
+          <figure class="split-photo">
+            <img src="images/pupas1.jpg" alt="Foto vertical">
+          </figure>
+
+          <div class="split-content">
+          <h2 class="split-title" style="text-align:center;">Tercer acto <br> Pupuseada</h2>
+            <p class="split-desc">
 
             Llegamos al fin de este dia, el cual culminaba con la comelona de pupusas, en donde creo que eran 11 individuos, se enfrentaban para ver quien era el más Arturo de todos.
             Cada participante comenzaba con 5 pupusas, y no podian continuar hasta haberse terminado esas 5, de ahi se les iban sumando de 1 en 1, fueron 15 arduos minutos, pero no igualados, hubo un competidor, 
@@ -155,32 +164,29 @@
             "Seguido" por Manuel con la cantidad igual de increible de 13 pupusas <br>
             De ahi en adelante fueron entre 10,9,7,6 pupusas, dejando muy en claro quien era primer y segundo puesto, una vez concluido y con un ganador, se termina el dia de hoy, uno de mis favoritos
 
-            </p>
 
-      </section>
-
-      <br>
-      <section class="hero">
-        <div class="carousel" aria-label="EtapaTres">
-          <div class="carousel-track">
-            <div class="slide current"><img src="images/pupas1.jpg" alt="Pupuseada1  jueves"></div>
-            <div class="slide"><img src="images/pupas2.jpg" alt="Pupuseada2  jueves"></div>
-            <div class="slide"><img src="images/pupas3.jpg" alt="Pupuseada3  jueves"></div>
-            <div class="slide"><img src="images/pupas4.jpg" alt="Pupuseada4  jueves"></div>
-            
-          </div>
-
-          <button class="control prev" aria-label="Anterior">❮</button>
-          <button class="control next" aria-label="Siguiente">❯</button>
-
-          <div class="indicators">
-            <button class="dot current" aria-label="Ir a la 1"></button>
-            <button class="dot" aria-label="Ir a la 2"></button>
-            <button class="dot" aria-label="Ir a la 3"></button>
-            <button class="dot" aria-label="Ir a la 4"></button>
+          </p>
           </div>
         </div>
       </section>
+
+        <section class="photo-triple">
+            <h2 class="gallery-title" style="text-align:center;">Fotos de la pupuseada</h2>
+
+            <div class="triple-grid">
+            <figure class="shot">
+            <img src="images/pupas2.jpg" alt="Foto 1">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/pupas3.jpg" alt="Foto 2">
+            </figure>
+
+            <figure class="shot">
+            <img src="images/pupas4.jpg" alt="Foto 3">
+            </figure>
+        </div>
+        </section>
 
     </div>
   </main>
@@ -190,7 +196,5 @@
       <small>© 2025 Semana de Sistemas | Jueves</small>
     </div>
   </footer>
-
-  <script src="js/carrusel.js"></script>
 </body>
 </html>

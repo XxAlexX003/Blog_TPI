@@ -45,6 +45,9 @@ try {
         case 'jueves':
             (new JuevesController())->index();
             break;
+        case 'viernes':
+            (new ViernesController())->index();
+            break;
         case 'miinfo':
             (new miInfoController())->index();
             break;

@@ -35,33 +35,20 @@
   <main class="site-main">
     <div class="container">
 
-        <section class="cards cards--single">
-    <article class="card card--xl">
-        <h3>Torneo Futbol 11</h3>
-        <p>  
+           <section class="perfil-split">
+        <div class="split-card">
+          <figure class="split-photo">
+            <img src="images/furbo.jpg" alt="Foto vertical">
+          </figure>
 
-        Este dia se iba a llevar acabo un torneo futboll 11, el cual tristemente se tuvo que ver cancelado por el anuncio emitido por el ministerio de educacion, en el cual se daba a conocer que las actividades planeadas ese dia se desplazaban a manera virtual, una pena
+          <div class="split-content">
+          <h2 class="split-title" style="text-align:center;">Torneo Futbol 11</h2>
+            <p class="split-desc">
 
-        </p>
-    </article>
-    </section>
-    <br>
-      <section class="hero">
-        <div class="carousel" aria-label="Fotos de cancelacionEvento">
-          <div class="carousel-track">
+              Este dia se iba a llevar acabo el torneo de futbol 11, pero, por motivos se fuerza mayor (lluvias peligrosas en el pais) el ministerio de educacion lanzó un comunicado en el cual se debian suspender cualquier tipo de actividad presencial
+              ,uno de los afectados fue el torneo. Troste
             
-            <div class="slide current"><img src="images/furbo.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="images/comunicado.jpg" alt="Foto 2"></div>
-
-          </div>
-
-          <button class="control prev" aria-label="Anterior">❮</button>
-          <button class="control next" aria-label="Siguiente">❯</button>
-
-          <div class="indicators" role="tablist" aria-label="Galeria">
-            <button class="dot current" aria-label="Ir a la 1" aria-selected="true"></button>
-            <button class="dot" aria-label="Ir a la 2"></button>
-
+          </p>
           </div>
         </div>
       </section>
@@ -74,6 +61,5 @@
     </div>
   </footer>
 
-  <script src="js/carrusel.js"></script>
 </body>
 </html>
