@@ -66,14 +66,51 @@
           </div>
         </div>
       </section>
+
+      <?php
+        $lista = isset($visitas) && is_array($visitas) ? $visitas : [];
+      ?>
+
+      <?php if (!empty($lista)): ?>
+        <section class="comments">
+          <h2 class="comments-title">Comentarios</h2>
+          <div class="comment-list">
+            <?php foreach ($lista as $c): ?>
+              <article class="comment-item">
+                <header class="comment-head">
+                  <h3 class="comment-name">
+                    <?= htmlspecialchars($c['nombre'] ?? 'Anónimo') ?>
+                  </h3>
+                  <?php if (!empty($c['fecha'])): ?>
+                    <time class="comment-date">
+                      <?= htmlspecialchars(date('d/m/Y H:i', strtotime($c['fecha']))) ?>
+                    </time>
+                  <?php endif; ?>
+                </header>
+                <?php if (!empty($c['comentario'])): ?>
+                  <p class="comment-body">
+                    <?= nl2br(htmlspecialchars($c['comentario'])) ?>
+                  </p>
+                <?php endif; ?>
+              </article>
+            <?php endforeach; ?>
+          </div>
+        </section>
+      <?php else: ?>
+        <section class="comments">
+          <h2 class="comments-title">Comentarios</h2>
+          <p class="comment-empty">No hay comentarios registrados.</p>
+        </section>
+      <?php endif; ?>
+
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© 2025 Semana de Sistemas, derechos reservados</small>
+      <small>© 2025 Semana de Sistemas. Derechos reservados</small>
     </div>
   </footer>
-    <script src="js/burger.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 </html>

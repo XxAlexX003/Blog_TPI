@@ -18,4 +18,18 @@ final class Visita {
             ':comentario' => $comentario ?: null
         ]);
     }
+
+    public function recientes(int $limit = 6): array {
+    $sql = "SELECT nombre, comentario, fecha
+            FROM tbl_visitas
+            WHERE comentario IS NOT NULL AND comentario <> ''
+            ORDER BY fecha DESC
+            LIMIT :lim";
+    $stmt = $this->db->prepare($sql);
+    $stmt->bindValue(':lim', $limit, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
 }
+
+}
+
