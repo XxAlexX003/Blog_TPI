@@ -60,6 +60,7 @@
       <small>© 2025 Semana de Sistemas | Miercoles</small>
     </div>
   </footer>
+    <script src="js/burger.js"></script>
 
 </body>
 </html>

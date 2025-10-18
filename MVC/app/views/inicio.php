@@ -74,6 +74,6 @@
       <small>© 2025 Semana de Sistemas, derechos reservados</small>
     </div>
   </footer>
-
+    <script src="js/burger.js"></script>
 </body>
 </html>

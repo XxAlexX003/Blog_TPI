@@ -195,6 +195,8 @@
     <div class="container">
       <small>© 2025 Semana de Sistemas | Jueves</small>
     </div>
-  </footer>
+  </footer> 
+      <script src="js/burger.js"></script>
+
 </body>
 </html>

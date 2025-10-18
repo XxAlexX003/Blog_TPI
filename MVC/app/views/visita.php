@@ -37,10 +37,9 @@
       <section class="form-shell">
         <div class="form-head">
           <h2>Registrar visita</h2>
-          <p class="form-sub">Déjanos tu nombre, correo y un comentario opcional.</p>
+          <p class="form-sub">Imgresa tu nombre, correo y un comentario opcional.</p>
         </div>
 
-        <!-- Mensajes -->
         <?php if (!empty($success)): ?>
           <div class="alert alert-success">
             <?= htmlspecialchars($success) ?>
@@ -53,19 +52,18 @@
           </div>
         <?php endif; ?>
 
-        <!-- Tarjeta del formulario -->
         <form class="form-card" method="post" action="?r=visita" autocomplete="off" novalidate>
           <div class="form-grid">
             <div class="form-group">
               <label for="nombre">Nombre <span class="req">*</span></label>
-              <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo">
-              <small class="hint">Escribe tu nombre y apellido.</small>
+              <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre y un apellido">
+              <small class="hint">Escribe un nombre y apellido.</small>
             </div>
 
             <div class="form-group">
               <label for="correo">Correo <span class="req">*</span></label>
               <input id="correo" name="correo" type="email" required placeholder="tunombre@correo.com">
-              <small class="hint">Usa un correo válido para poder contactarte.</small>
+              <small class="hint">Usa un correo válido para poder contactarte en un futuro.</small>
             </div>
 
             <div class="form-group form-group--full">
@@ -76,7 +74,7 @@
 
           <div class="form-actions">
             <button class="btn btn-primary" type="submit">Registrar visita</button>
-            <a class="btn btn-ghost" href="?r=inicio">Volver al inicio</a>
+            <a class="btn btn-ghost" href="inicio">Volver al inicio</a>
           </div>
         </form>
       </section>
@@ -89,6 +87,7 @@
       <small>© 2025 Semana de Sistemas | Visitas</small>
     </div>
   </footer>
+    <script src="js/burger.js"></script>
 
 </body>
 </html>
